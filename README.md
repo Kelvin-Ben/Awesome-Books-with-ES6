@@ -13,7 +13,7 @@
 
 ## Live Demo 
 
-[[Live Demo Link]([https://livedemo.com](https://github.com/Kelvin-Ben/Awesome-Books-with-ES6/settings/pages))](https://github.com/Kelvin-Ben/Awesome-Books-with-ES6/settings/pages)
+[[Live Demo Link](https://kelvin-ben.github.io/Awesome-Books-with-ES6/)
 
 
 ## Getting Started
