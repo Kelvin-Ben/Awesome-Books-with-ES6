@@ -1,4 +1,7 @@
-/* nav section */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .nav-menu {
   border: 3px solid black;
   list-style: none;
@@ -67,7 +70,6 @@ footer p {
   justify-content: flex-end;
 }
 
-/* end of nav section */
 .container {
   font-family: 'Poppins', sans-serif;
   display: flex;

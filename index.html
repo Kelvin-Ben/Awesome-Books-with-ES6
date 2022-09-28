@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav id="nav">
-      <ul id="nav-links" class="nav-menu">
-        <p class="nav-title">Awesome books</p>
-        <div class="menuItems">
-          <li class="nav-link book_list_section nav-link-visited">List</li>
-          <li class="nav-link book_add_section">Add new</li>
-          <li class="nav-link book_contact_section">Contact</li>
-        </div>
-      </ul>
-    </nav>
-    <div class="date">September, 22th 2022, 11:36 am</div>
-    <div class="container">
-      <div class="booklistsection">
-        <h1 class="container_title">All Awesome Books</h1>
-        <h3 class="nodata_Message">No Data Found</h3>
-        <ul class="books hidden_item"></ul>
-        <div class="separator"></div>
-      </div>
-
-      <section class="add_book_section hidden_item">
-        <h2 class="container_title">Add a new Book</h2>
-        <form class="add_form">
-          <input
-            type="text"
-            name="title"
-            class="form_input title"
-            placeholder="Title"
-          />
-          <input
-            type="text"
-            name="author"
-            class="form_input author"
-            placeholder="Author"
-          />
-          <button class="submit_button">Add</button>
-        </form>
-      </section>
-    </div>
-    <section class="contact hidden_item" id="contact">
-      <h2>Contact Information</h2>
-      <p>
-        Do you have any questions or you just want to say "Hello"?<br />You can
-        reach out to us
-      </p>
-      <ul>
-        <li>Our email: mail@mail.com</li>
-        <li>Our phone number: 0043586534422</li>
-        <li>Our address: Streetname 22, 84503 City, Country</li>
-      </ul>
-    </section>
-    <footer>
-      <p>Copyright ...</p>
-    </footer>
-   
-    <script type="module" src="./index.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<title>Awesome Books App</title>
+</head>
+<body>
+	<nav id="nav">
+		<ul id="nav-links" class="nav-menu">
+			<p class="nav-title">Awesome books</p>
+			<div class="menuItems">
+				<li class="nav-link book_list_section nav-link-visited" >List</li>
+				<li class="nav-link book_add_section" >Add new</li>
+				<li class="nav-link book_contact_section" >Contact</li>		
+			</div>
+		</ul>
+</nav>
+<div class="date">
+	September, 22th 2022, 11:36 am
+</div>
+<div class="container">
+	<div class="booklistsection">
+		<h1 class="container_title">All Awesome Books</h1>
+		<h3 class="nodata_Message">No Data Found</h3>
+		<ul class="books hidden_item">
+		</ul>
+		<div class="separator"></div>
+	</div>
+  
+ <section class="add_book_section hidden_item">
+  <h2 class="container_title">Add a new Book</h2>
+  <form class="add_form">
+   <input type="text" name="title"  class="form_input title" placeholder="Title">
+    <input type="text" name="author" class="form_input author" placeholder="Author">
+    <button class="submit_button">Add</button>
+  </form>
+ </section>
+ 
+</div>
+<section class="contact hidden_item" id="contact">
+	<h2>Contact Information</h2>
+	<p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us</p>
+	<ul>
+	<li>Our email: mail@mail.com</li>
+	<li>Our phone number: 0043586534422</li>
+	<li>Our address: Streetname 22, 84503 City, Country</li>	
+	</ul>
+</section>
+	<footer>
+		<p>Copyright       ...</p>
+</footer>
+<script type="module" src="index.js"></script>
+</body>
 </html>
