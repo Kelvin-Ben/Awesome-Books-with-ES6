@@ -1,4 +1,6 @@
-const mainscript = () => {
+import DateTime from './luxon.js';
+
+const general = () => {
   const listMenu = document.querySelector('.book_list_section');
   const addMenu = document.querySelector('.book_add_section');
   const contactMenu = document.querySelector('.book_contact_section');
@@ -74,43 +76,20 @@ const mainscript = () => {
   listMenu.addEventListener('click', showbooklist);
   addMenu.addEventListener('click', showAddForm);
   contactMenu.addEventListener('click', showContact);
-  function generateDateEnd(day) {
-    if ((day >= 10) && (day <= 20)) {
-      return 'th';
-    }
 
-    switch (day % 10) {
-      case 1: return 'st';
-      case 2: return 'nd';
-      case 3: return 'rd';
-      default: return 'th';
-    }
+  function refreshLatonDateTime() {
+    document.querySelector('.date').innerHTML = DateTime.now()
+      .setLocale(navigator.language)
+      .toLocaleString({
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: 'false',
+      });
   }
-
-  function generateFormatedHour(actualdate) {
-    const hour = actualdate.getHours();
-    if (hour === 12) {
-      return `${hour}:${actualdate.getMinutes()}:${actualdate.getSeconds()} am`;
-    }
-    if (hour === 24) {
-      return `12:${actualdate.getMinutes()}:${actualdate.getSeconds()} pm`;
-    }
-
-    if (hour < 12) {
-      return `${hour}:${actualdate.getMinutes()}:${actualdate.getSeconds()} am`;
-    }
-
-    return `${hour % 12}:${actualdate.getMinutes()}:${actualdate.getSeconds()} pm`;
-  }
-  function displayDateTime() {
-    const actualDate = new Date();
-    const options = { year: 'numeric', month: 'long', day: '2-digit' };
-    const date = actualDate.toLocaleDateString('us-US', options);
-    const reformat = date.split(',');
-    const dayend = generateDateEnd(actualDate.getDate());
-    document.querySelector('.date').innerHTML = `${reformat[0] + dayend}, ${reformat[1]}  ${generateFormatedHour(actualDate)}`;
-  }
-  setInterval(displayDateTime, 1000);
+  setInterval(refreshLatonDateTime, 1000);
 };
 
-export default { mainscript };
+export default general;

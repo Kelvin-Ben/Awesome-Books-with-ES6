@@ -1,4 +1,4 @@
-import BookPage from './bookpage.js';
+import BookPage from './bookPage.js';
 import Book from './book.js';
 
 const booksList = () => {
@@ -56,4 +56,4 @@ const booksList = () => {
   window.removeBook = removeBook;
 };
 
-export default { booksList };
+export default booksList;

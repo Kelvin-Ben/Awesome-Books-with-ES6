@@ -1,5 +1,3 @@
-import Book from './book.js';
-
 class BookPage {
   booklist = [];
 
@@ -34,6 +32,4 @@ class BookPage {
   }
 }
 
-Book();
-
-export default { BookPage };
+export default BookPage;
